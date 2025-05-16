@@ -1,4 +1,4 @@
-package dk.ss1.bt2;
+package dk.bt2;
 
 import java.io.*;
 import javax.servlet.http.*;
