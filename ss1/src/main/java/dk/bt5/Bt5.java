@@ -1,4 +1,4 @@
-package dk.bt4;
+package dk.bt5;
 
 import java.io.*;
 import javax.servlet.ServletException;
@@ -6,7 +6,7 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
 @WebServlet(name = "bt4", value = "/b1")
-public class Bt4 extends HttpServlet {
+public class Bt5 extends HttpServlet {
     public void switchErro(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
        try{
             int b = 1/0;

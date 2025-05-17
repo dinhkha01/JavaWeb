@@ -7,7 +7,7 @@ import javax.servlet.annotation.*;
 
 @WebServlet(name = "bt3", value = "/bt3")
 public class Bt3 extends HttpServlet {
-    public void getStudent(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         response.setContentType("text/html");
         Student stu = new Student();
         stu.setName("kha");
@@ -16,6 +16,5 @@ public class Bt3 extends HttpServlet {
         request.getRequestDispatcher("bt3.jsp").forward(request,response);
     }
 
-    public void destroy() {
-    }
+
 }

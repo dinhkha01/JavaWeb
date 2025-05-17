@@ -8,10 +8,8 @@
 <h1><%= "Hello World!" %></h1>
 <br/>
 <a href="hello-servlet">Hello Servlet</a>
-<a href="bt2">bt2</a>
-<a href="bt3">bt3</a>
-<a href="bt6/bt6.jsp">bt6</a>
-<a href="bt7/bt7.jsp">bt7</a>
+<a href="submit">Form BT2</a>
+<div><a href="bt3">Form BT3</a></div>
 
 </body>
 </html>
