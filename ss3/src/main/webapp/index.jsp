@@ -13,5 +13,11 @@
 <a href="bt1/bt1.jsp">bt1</a>
 <hr>
 <a href="bt2/bt2.jsp">bt2</a>
+<hr>
+<a href="bt3/homePage.jsp">bt3</a>
+<hr>
+<a href="bt4/bt4.jsp">bt4</a>
+<hr>
+<a href="bt5">bt5</a>
 </body>
 </html>
