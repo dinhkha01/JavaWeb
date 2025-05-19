@@ -19,5 +19,7 @@
 <a href="bt4/bt4.jsp">bt4</a>
 <hr>
 <a href="bt5">bt5</a>
+<hr>
+<a href="bt6">bt6</a>
 </body>
 </html>

@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-<form action="bt5" method="post">
+<form action="<%=request.getContextPath()%>/bt5" method="post">
   <div>
     <label > ten dang nhap </label>
     <input type="text" name="name">
