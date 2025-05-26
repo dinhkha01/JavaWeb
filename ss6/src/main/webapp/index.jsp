@@ -15,6 +15,8 @@
 <hr>
 <a href="login">bt2</a>
 <hr>
+<a href="products">bt3</a>
+<hr>
 <a href="GameServlet">bt5</a>
 </body>
 </html>
