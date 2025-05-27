@@ -5,23 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98ff4cb2-d526-46d3-83f3-34309be873bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/bt3/CartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/bt3/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/bt3/IProductCartDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/bt3/IProductDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/bt3/ProductCartDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/bt3/ProductDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/entity/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/entity/ProductCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/service/ProductCartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Views/bt3/cart.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Views/bt3/listProduct.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sql/bt3.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/configs/ConnectionDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/configs/ConnectionDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,6 +122,9 @@
       <updated>1748161809624</updated>
       <workItem from="1748161811168" duration="2255000" />
       <workItem from="1748238092743" duration="2921000" />
+      <workItem from="1748259696982" duration="603000" />
+      <workItem from="1748309421322" duration="346000" />
+      <workItem from="1748309785480" duration="44000" />
     </task>
     <servers />
   </component>
