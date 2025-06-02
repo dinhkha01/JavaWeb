@@ -5,7 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98ff4cb2-d526-46d3-83f3-34309be873bb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss10-DataBinding/src/main/java/dk/configs/CharacterEncodingFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss10-DataBinding/src/main/java/dk/configs/ConnectionDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss10-DataBinding/src/main/java/dk/controller/bt3/AccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss10-DataBinding/src/main/java/dk/controller/bt4/ProfileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss10-DataBinding/src/main/java/dk/model/entity/bt3/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss10-DataBinding/src/main/java/dk/model/entity/bt4/UserProfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss10-DataBinding/src/main/webapp/views/bt3.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss10-DataBinding/src/main/webapp/views/bt4.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9-LT/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9-LT/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9-LT/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9-LT/src/main/java/dk/configs/Appinit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9-LT/src/main/java/dk/configs/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10-DataBinding/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../ss10-DataBinding/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10-DataBinding/src/main/java/dk/configs/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss10-DataBinding/src/main/java/dk/configs/WebConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,6 +139,7 @@
       <workItem from="1748259696982" duration="603000" />
       <workItem from="1748309421322" duration="346000" />
       <workItem from="1748309785480" duration="44000" />
+      <workItem from="1748837702319" duration="30000" />
     </task>
     <servers />
   </component>

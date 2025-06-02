@@ -3,7 +3,7 @@ plugins {
     id 'war'
 }
 
-group 'com.example'
+group 'dk'
 version '1.0-SNAPSHOT'
 
 repositories {
@@ -23,15 +23,16 @@ tasks.withType(JavaCompile) {
 
 dependencies {
     compileOnly('javax.servlet:javax.servlet-api:4.0.1')
-    implementation group: 'javax.servlet', name: 'jstl', version: '1.2'
-       // https://mvnrepository.com/artifact/org.springframework/spring-webmvc
-           implementation("org.springframework:spring-webmvc:5.3.18")
-      compileOnly 'org.projectlombok:lombok:1.18.36'
-          annotationProcessor 'org.projectlombok:lombok:1.18.36'
+    compileOnly 'org.projectlombok:lombok:1.18.36'
+        annotationProcessor 'org.projectlombok:lombok:1.18.36'
+    // https://mvnrepository.com/artifact/org.springframework/spring-webmvc
+    implementation("org.springframework:spring-webmvc:5.3.18")
+     implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.28'
+     implementation 'commons-fileupload:commons-fileupload:1.4'
+    implementation 'com.cloudinary:cloudinary-http44:1.36.0'
+
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
-    implementation 'commons-fileupload:commons-fileupload:1.4'
-    implementation 'com.cloudinary:cloudinary-http44:1.36.0'
 }
 
 test {
