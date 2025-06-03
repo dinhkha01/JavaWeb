@@ -100,21 +100,20 @@
                                         <th width="10%">Giá</th>
                                         <th width="10%">Danh mục</th>
                                         <th width="8%">Trạng thái</th>
-                                        <th width="12%">Ngày tạo</th>
                                         <th width="10%">Thao tác</th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <c:forEach var="product" items="${products}">
+                                    <c:forEach var="product" items="${products}" varStatus="loop">
                                         <tr>
-                                            <td>${product.productId}</td>
+                                            <td>${loop.count}</td>
                                             <td>
                                                 <c:choose>
                                                     <c:when test="${not empty product.imageUrl}">
                                                         <img src="${pageContext.request.contextPath}${product.imageUrl}"
                                                              class="img-thumbnail"
                                                              style="max-width: 60px; max-height: 60px;"
-                                                             alt="Product Image" />
+                                                             alt="${product.imageUrl}" />
                                                     </c:when>
                                                     <c:otherwise>
                                                         <div class="text-center text-muted">
@@ -152,11 +151,7 @@
                                                     </c:otherwise>
                                                 </c:choose>
                                             </td>
-<%--                                            <td>--%>
-<%--                                                <c:if test="${not empty product.createdAt}">--%>
-<%--                                                    <fmt:formatDate value="${product.createdAt}" pattern="dd/MM/yyyy" />--%>
-<%--                                                </c:if>--%>
-<%--                                            </td>--%>
+
                                             <td>
                                                 <a href="${pageContext.request.contextPath}/products/edit/${product.productId}"
                                                    class="btn btn-sm btn-primary me-1" title="Chỉnh sửa">
