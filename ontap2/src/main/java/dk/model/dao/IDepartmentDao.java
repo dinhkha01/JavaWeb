@@ -1,4 +1,10 @@
+// IDepartmentDao.java
 package dk.model.dao;
 
-public interface IDepartmentDao extends IGenericDao{
+import dk.model.entity.Department;
+import java.util.List;
+
+public interface IDepartmentDao extends IGenericDao<Department, Integer> {
+    List<Department> searchByName(String name);
+    List<Department> getActiveDepartments();
 }

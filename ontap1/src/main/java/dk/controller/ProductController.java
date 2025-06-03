@@ -319,7 +319,6 @@ public class ProductController {
         // Lưu file
         String uploadPath = UPLOAD_DIR + "/images/" + fileName;
         file.transferTo(new File(uploadPath));
-        System.out.println("Upload path: " + uploadPath);
         return fileName;
     }
 }

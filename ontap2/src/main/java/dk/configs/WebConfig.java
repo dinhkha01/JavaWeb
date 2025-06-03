@@ -37,7 +37,6 @@ public class WebConfig implements WebMvcConfigurer {
         return new LocalValidatorFactoryBean();
     }
 
-    // Thêm method này để Spring MVC sử dụng validator
     @Override
     public Validator getValidator() {
         return validator();
