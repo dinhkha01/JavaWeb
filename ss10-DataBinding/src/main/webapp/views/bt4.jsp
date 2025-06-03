@@ -107,7 +107,7 @@
             <p><strong>Tên:</strong> ${profile.name}</p>
             <c:if test="${not empty profile.avatar}">
                 <p><strong>Ảnh đại diện:</strong></p>
-                 <img src="/static/img/${profile.avatar}" alt="Avatar của ${profile.name}" class="avatar-image" />
+                 <img src="${profile.avatar}" alt="Avatar của ${profile.name}" class="avatar-image" />
                 <p><em>File: ${profile.avatar}</em></p>
             </c:if>
         </div>
