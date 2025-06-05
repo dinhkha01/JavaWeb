@@ -14,12 +14,12 @@ import javax.validation.Valid;
 
 @Controller
 public class bt1 {
-    @GetMapping("/login")
+    @GetMapping("/bt1")
     public String login(Model model) {
         model.addAttribute("user", new User());
         return "bt1/login";
     }
-    @PostMapping("/login")
+    @PostMapping("/bt1")
     public String login(@Valid @ModelAttribute User user,  BindingResult result, HttpSession session ) {
         if (result.hasErrors()) {
             return "bt1/login";
@@ -30,7 +30,7 @@ public class bt1 {
     @GetMapping("/welcome")
     public String welcome(@SessionAttribute("user") User user, Model model) {
         if (user == null) {
-            return "redirect:/login";
+            return "redirect:/bt1";
         }
         model.addAttribute("username", user.getUsername());
         return "bt1/welcome";
