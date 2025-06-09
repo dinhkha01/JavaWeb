@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Home - My Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .content {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+    }
+    .welcome-message {
+      background-color: #f8f9fa;
+      padding: 40px;
+      border-radius: 8px;
+      margin: 20px auto;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+
+<div th:replace="fragments/header :: header" ></div>
+<main>
+  <div class="content">
+    <div class="welcome-message">
+      <h1>Welcome to My Website!</h1>
+      <p>This is the home page of our Spring Boot application with Thymeleaf templates.</p>
+    </div>
+  </div>
+</main>
+
+
+<div th:replace="fragments/footer :: footer"></div>
+</body>
+</html>

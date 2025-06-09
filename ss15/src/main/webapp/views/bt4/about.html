@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+        .contact-section {
+            background-color: #f8f9fa;
+            padding: 40px;
+            border-radius: 8px;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        .contact-info {
+            text-align: left;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div th:replace="header.html :: header"></div>
+
+<div class="content">
+    <div class="contact-section">
+        <h1>Contact Us</h1>
+        <p>Get in touch with us for any inquiries or support.</p>
+
+        <div class="contact-info">
+            <h3>Contact Information:</h3>
+            <p><strong>Email:</strong> info@mywebsite.com</p>
+            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+            <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+        </div>
+    </div>
+</div>
+
+<div th:replace="footer.html :: footer"></div>
+</body>
+</html>

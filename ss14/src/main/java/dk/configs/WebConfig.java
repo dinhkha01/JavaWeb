@@ -32,6 +32,7 @@ public class WebConfig implements WebMvcConfigurer {
         return resolver;
     }
 
+
     @Bean
     public CommonsMultipartResolver multipartResolver() {
         CommonsMultipartResolver resolver = new CommonsMultipartResolver();
