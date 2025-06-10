@@ -2,6 +2,7 @@ package dk.configs;
 
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.context.annotation.Bean;
@@ -19,6 +20,7 @@ import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 import org.thymeleaf.templatemode.TemplateMode;
 
+import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 import java.util.Properties;
 
@@ -77,9 +79,9 @@ public class WebConfig implements WebMvcConfigurer {
     public DataSource dataSource() {
         DriverManagerDataSource ds = new DriverManagerDataSource();
         ds.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        ds.setUrl("jdbc:mysql://localhost:3306/ss16_bt1?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC");
+        ds.setUrl("jdbc:mysql://localhost:3306/ss17_bt1?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC");
         ds.setUsername("root");
-        ds.setPassword("");
+        ds.setPassword("8112@3");
         return ds;
     }
 
@@ -114,5 +116,11 @@ public class WebConfig implements WebMvcConfigurer {
         HibernateTransactionManager txManager = new HibernateTransactionManager();
         txManager.setSessionFactory(sessionFactory);
         return txManager;
+    }
+    @Bean
+    public PlatformTransactionManager transactionManager(EntityManagerFactory entityManagerFactory) {
+        JpaTransactionManager transactionManager = new JpaTransactionManager();
+        transactionManager.setEntityManagerFactory(entityManagerFactory);
+        return transactionManager;
     }
 }

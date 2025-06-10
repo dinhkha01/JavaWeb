@@ -39,8 +39,8 @@ public class Customer {
     private String phoneNumber;
 
     @Column(name = "role")
-    private String role = "USER"; // Mặc định là USER
+    private String role = "USER";
 
     @Column(name = "status")
-    private boolean status = true; // Mặc định là active
+    private boolean status = true;
 }
